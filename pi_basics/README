@@ -1,0 +1,8 @@
+<h1>Very basic raspi stuff</h2>
+
+<h2>Setup wifi</h2>
+http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+
+<h2>Find your raspi in your local network</h2>
+<code>sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'</code>
+http://raspberrypi.stackexchange.com/questions/13936/find-raspberry-pi-address-on-local-network
